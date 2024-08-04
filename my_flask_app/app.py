@@ -1,7 +1,7 @@
 import certifi
 from pymongo import MongoClient
 from sentence_transformers import SentenceTransformer
-from my_flask_app import Flask, request, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 import subprocess
 import os
