@@ -116,7 +116,7 @@ For the same 5 questions, I measured the cosine similarity between the expected 
 
 ### Cosine Graph Visualization
 
-The graph below shows the cosine similarities between each model's response with the actual answer:
+The graph below shows the cosine similarities between each model's response with the actual answers of the questions:
 
 ![Cosine Similarity Comparison](nextjs/public/cosine_similarity.png)
 
