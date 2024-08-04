@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./nextjs
+      dockerfile: Dockerfile
+    image: sveerisetti/nextjs-frontend:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./my_flask_app
+      dockerfile: Dockerfile
+    image: sveerisetti/flask-backend:latest
+    ports:
+      - "5002:5002"
+    volumes:
+      - /Users/sveerisetti/Desktop/Duke_Summer/mlops:/mlops  # Mount the mlops directory to the container
+    environment:
+      - LLAMAFILE_PATH=/mlops/mistral-7b-instruct-v0.2.Q4_0.llamafile  # Set environment variable for the path to the llamafile

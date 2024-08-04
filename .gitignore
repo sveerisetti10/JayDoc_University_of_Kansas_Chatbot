@@ -1,0 +1,27 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore node_modules
+node_modules/
+nextjs/node_modules/
+
+# Ignore build output
+.next/
+nextjs/.next/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore logs
+*.log
+
+# Ignore coverage files
+.coverage
+coverage/
+
+# Ignore environment files
+.env
+
+# Ignore specific large files
+nextjs/node_modules/next/next-swc-fallback/@next/swc-darwin-x64/next-swc.darwin-x64.node

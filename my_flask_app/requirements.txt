@@ -1,0 +1,6 @@
+flask
+flask-cors
+pymongo
+certifi
+sentence-transformers
+# Add other dependencies here
