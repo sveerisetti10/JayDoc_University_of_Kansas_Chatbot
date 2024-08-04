@@ -1,5 +1,7 @@
 # AIPI 561 Project: JayDoc Free Health Clinic Helper
 
+[![Build and Push Docker Images](https://github.com/sveerisetti10/JayDoc_University_of_Kansas_Chatbot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/sveerisetti10/JayDoc_University_of_Kansas_Chatbot/actions/workflows/docker-image.yml)
+
 Objective: The purpose of this project is to leverage the capabilities of the meta-llama/Llama-2-7b-instruct Large Language Model llamafile to develop an interactive application. This application enables users to ask questions and receive detailed information about the JayDoc Free Health Clinic located in Kansas City. The JayDoc Free Health Clinic is an important community resource that provides free healthcare services to the underserved populations of Kansas City. The clinic is staffed by medical students under the supervision of licensed physicians and offers a wide variety of services including general health consultations, preventative care, and specialized services such as diabetes management and women's health.
 
 
