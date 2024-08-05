@@ -3,6 +3,7 @@
 [![Build and Push Docker Images](https://github.com/sveerisetti10/JayDoc_University_of_Kansas_Chatbot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/sveerisetti10/JayDoc_University_of_Kansas_Chatbot/actions/workflows/docker-image.yml)
 
 ## Video Demo
+Please click the image below to access my final demo on YouTube.
 
 [![Demo](nextjs/public/Thumbnail.png)](https://youtu.be/i0CaaSOJQww)
 
