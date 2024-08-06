@@ -9,8 +9,7 @@ Please click the image below to access my final demo on YouTube.
 
 ## Objective
 
-The purpose of this project is to leverage the capabilities of the meta-llama/Llama-2-7b-instruct Large Language Model llamafile to develop an interactive application. This application enables users to ask questions and receive detailed information about the JayDoc Free Health Clinic located in Kansas City. The JayDoc Free Health Clinic is an important community resource that provides free healthcare services to the underserved populations of Kansas City. The clinic is staffed by medical students under the supervision of licensed physicians and offers a wide variety of services including general health consultations, preventative care, and specialized services such as diabetes management and women's health.
-
+The purpose of this project is to leverage the capabilities of the Mistral-7B-Instruct Language Model llamafile to develop an interactive application. This application enables users to ask questions and receive detailed information about the JayDoc Free Health Clinic located in Kansas City. The JayDoc Free Health Clinic is an important community resource that provides free healthcare services to the underserved populations of Kansas City. The clinic is staffed by medical students under the supervision of licensed physicians and offers a wide variety of services including general health consultations, preventative care, and specialized services such as diabetes management and women's health.
 
 ## Primary Architecture
 ![Architecture Diagram](nextjs/public/architecture.png)
@@ -45,10 +44,12 @@ The primary architecture of the application involves several key components and 
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed on your machine:
+Before you begin, ensure you have the following installed/downloaded on your machine:
 - Docker (for containerization)
 - Docker Compose (to manage multi-container Docker applications)
 - Make (to run the provided Makefile commands)
+- llamafile is located at: https://huggingface.co/Mozilla/Mistral-7B-Instruct-v0.2-llamafile/blob/main/mistral-7b-instruct-v0.2.Q4_0.llamafile
+
 
 ### Setup
 
