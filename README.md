@@ -124,7 +124,7 @@ The average text generation time for the evaluated questions is approximately **
 
 For the same 5 questions, I measured the cosine similarity between the expected answers and the response from both my RAG system and the standard GPT-4o model. Higher cosine similarity values will indicate more accurate responses in this case. It can be concluded, based on the graph below, that the Mistral model with the addition of RAG outperformed the standard GPT-4o model across all 5 questions. Logically, this makes sense because the standard GPT-4o model is not trained comprehensively on JayDoc. Mistral has access to the vectorized database containing comprehensive information regarding JayDoc, which is why it performed better. 
 
-### Cosine Graph Visualization
+### Cosine Similarity Graph Visualization
 
 The graph below shows the cosine similarities between each model's response with the actual answers of the questions:
 
