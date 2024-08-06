@@ -5,13 +5,14 @@ TEST_DIR=tests
 DOCKER_IMAGE_NAME_BACKEND=sveerisetti/flask-backend
 DOCKER_IMAGE_NAME_FRONTEND=sveerisetti/nextjs-frontend
 
-# For formatting we use the black formatter
+# For formatting we use the black formatter for Python and prettier for JavaScript
 # For testing we use pytest which references the test_jaydoc_module.py in the tests directory
 # For linting we use flake8 for Python and eslint for JavaScript
 PYTHON_FORMATTER=black
+JS_FORMATTER=npx prettier --write
 TEST_RUNNER=pytest
 PYTHON_LINTER=flake8
-JS_LINTER=eslint
+JS_LINTER=npx eslint
 
 # Here we install the dependencies for the backend
 install-backend:
@@ -21,17 +22,21 @@ install-backend:
 install-frontend:
 	@npm install --prefix $(FRONTEND_DIR)
 
-# Here we format the code using the black formatter
+# Here we format the code using the black formatter for backend
 format-backend:
 	@$(PYTHON_FORMATTER) $(BACKEND_DIR)
 
-# Here we lint the code using flake8
+# Here we format the code using the prettier formatter for frontend
+format-frontend:
+	@$(JS_FORMATTER) $(FRONTEND_DIR)
+
+# Here we lint the code using flake8 for backend
 lint-backend:
 	@$(PYTHON_LINTER) $(BACKEND_DIR) --config=.flake8
 
 # Here we run the tests using pytest
 test-backend:
-	@$(TEST_RUNNER) $(TEST_DIR_DIR)
+	@$(TEST_RUNNER) $(TEST_DIR)
 
 # Here we build the Docker image for the backend
 build-backend:
@@ -45,7 +50,7 @@ build-frontend:
 backend: install-backend format-backend lint-backend test-backend build-backend
 
 # Here we run all steps for the frontend in sequence
-frontend: install-frontend lint-frontend build-frontend
+frontend: install-frontend format-frontend build-frontend
 
 # Combo command to run all steps for both backend and frontend
 all: backend frontend
